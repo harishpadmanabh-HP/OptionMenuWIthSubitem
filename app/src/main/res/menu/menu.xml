@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item android:id="@+id/item1"
+    android:icon="@drawable/ic_local_bar_black_24dp"
+    android:title="ITEM ! "
+    app:showAsAction="ifRoom"
+    ></item>
+    <item android:id="@+id/item2"
+        android:title="ITEM 2 "
+        app:showAsAction="never"
+        ></item>
+    <item android:id="@+id/item3"
+        android:title="ITEM 3 "
+        app:showAsAction="never"
+        >
+        //adding sub item
+        <menu>
+            <item android:id="@+id/subitem1"
+                android:title="sub item 1"
+                ></item>
+            <item android:id="@+id/subitem2"
+                android:title="sub item 2"
+                ></item>
+            <item android:id="@+id/subitem3"
+                android:title="sub item 3"
+                ></item>
+        </menu>
+    </item>
+
+</menu>
